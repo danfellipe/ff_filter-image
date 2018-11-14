@@ -1,5 +1,6 @@
 <?php
 defined ('ABSPATH') or die ('No script kiddies please!');
+
 /*
   Plugin Name: Filtro Para Imagens
   Plugin URI: https://github.com/danfellipe/ff_filter-image/
@@ -14,11 +15,12 @@ defined ('ABSPATH') or die ('No script kiddies please!');
 function ff_filter_image($atts){
 
   $html  = '<form class="" action="" method="post" id="fileSelect">';
+  $html .= '<label for="fileElem" class="control-label label-bordered">CLIQUE AQUI PARA ESCOLHER UM ARQUIVO</label>';
   $html .= '<input type="file" id="fileElem" name="upload-img" accept="image/png, image/jpeg"/>';
   $html .= '<div id="fileList">';
-  $html .= '<div id="fileList">Escolha uma imagem!</p>';
+  //$html .= '<div id="fileList">Escolha uma imagem!</p>';
   $html .= '</div>';
-  $html .= '<script src="'.  plugins_url('ff_filter-image/main.js', dirname(__FILE__)) .'">';
+  $html .= '<script src="' .  plugins_url('ff_filter-image/main.js', dirname(__FILE__)) .'">';
   $html .= '</form>';
   return $html;
 }
