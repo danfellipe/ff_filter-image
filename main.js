@@ -65,6 +65,7 @@ function setSaturate(e) {
 
 //MOSTRAR FILTROS / OCULTAR
 function mudarEstado(el){
+    var botoes = new Array('b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7')
     var b1 = document.getElementById('bt1').style.display;
     var b2 = document.getElementById('bt2').style.display;
     var b3 = document.getElementById('bt3').style.display;
