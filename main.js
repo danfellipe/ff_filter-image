@@ -11,7 +11,7 @@ function handleFiles(event) {
     var files = this.files
 
     if (!files.length) {
-        fileList.innerHTML = "<p>Nenhuma Imagem Selecionada!</p>";
+        fileList.innerHTML = "<p></p>";
     } else {
         fileList.innerHTML = "";
         var div = document.createElement("div");
