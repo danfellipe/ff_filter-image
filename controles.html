@@ -1,0 +1,54 @@
+<form class="action=" method="post" id="fileSelect">
+    <h2 class="sub-titulo__plugin">Passo1 - Escolha a foto</h2>
+    <label for="fileElem" class="control-label label-bordered">CLIQUE AQUI PARA ESCOLHER UM ARQUIVO</label>
+    <input type="file" id="fileElem" name="upload-img" accept="image/png, image/jpeg"/>
+    <div id="fileList">
+    </div>
+</form>
+
+    <h2 class="sub-titulo__plugin">Passo 2 - Escolha o filtro</h2>
+
+    <div class="conjunto_botoes">
+        <button class="botao" id="bt1" onclick="" n>Sépia</button>
+        <button class="botao" id="bt2">Brilho</button>
+        <button class="botao" id="bt3">Contraste</button>
+        <button class="botao" id="bt4">Grayscale</button>
+        <button class="botao" id="bt5">Inversão</button>
+        <button class="botao" id="bt6">Opacidade</button>
+        <button class="botao" id="bt7">Saturação</button>
+    </div>
+
+    <div class="">
+        <h2>Sépia</h2>
+        <input id="sepiaInput" type="range" type="hidden" oninput="setSepia(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Brilho</h2>
+        <input id="brightnessInput" type="range" type="hidden" oninput="setBrightness(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Contraste</h2>
+        <input id="contrastInput" type="range" type="hidden" oninput="setContrast(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Grayscale</h2>
+        <input id="grayscaleInput" type="range" type="hidden" oninput="setGrayscale(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Inverção</h2>
+        <input id="invertInput" type="range" type="hidden" oninput="setInvert(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Opacidade</h2>
+        <input id="opacityInput" type="range" type="hidden" oninput="setOpacity(this);" value="0" step="0.1" min="0" max="1">
+    </div>
+
+    <div class="">
+        <h2>Saturação</h2>
+        <input id="saturateInput" type="range" type="hidden" oninput="setSaturate(this);" value="0" step="0.1" min="0" max="1">
+    </div>
